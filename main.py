@@ -32,9 +32,9 @@ with row2[2]:
     avg_dpd_per_delinquency = st.number_input('Avg DPD', min_value=0, value=20)
 
 with row3[0]:
-    delinquency_ratio = st.number_input('Delinquency Ratio', min_value=0, max_value=100, step=1, value=30)
+    delinquency_ratio = st.slider('Delinquency Ratio(%)', min_value=0, max_value=100, step=1, value=30)
 with row3[1]:
-    credit_utilization_ratio = st.number_input('Credit Utilization Ratio', min_value=0, max_value=100, step=1, value=30)
+    credit_utilization_ratio = st.slider('Credit Utilization Ratio(%)', min_value=0, max_value=100, step=1, value=30)
 with row3[2]:
     num_open_accounts = st.number_input('Open Loan Accounts', min_value=1, max_value=4, step=1, value=2)
 
